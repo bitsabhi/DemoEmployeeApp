@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+    
+  <TextView
+  	android:id="@+id/tv_name"
+  	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:text="Enter Employee's Name: "
+    android:textStyle="bold"
+  />
+  <EditText
+  	android:id="@+id/et_name"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+     android:layout_below="@id/tv_name"
+  />
+  
+  
+  <TextView
+  	android:id="@+id/tv_age"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"   
+    android:layout_below="@id/et_name"
+    android:textStyle="bold"
+    android:text="Enter Employee's Age: "
+  />
+  
+   <EditText
+  	android:id="@+id/et_age"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"   
+    android:layout_below="@id/tv_age"
+  />
+  
+  <TextView
+  	android:id="@+id/tv_department"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"    
+    android:textStyle="bold"
+    android:text="Choose Department: "
+    android:layout_below="@id/et_age"
+  />
+  <Spinner
+  	android:id="@+id/spinner_department"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_department"    
+    android:entries="@array/department"
+  />
+  
+  <TextView
+  	android:id="@+id/tv_designation"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"    
+    android:textStyle="bold"
+    android:text="Choose Designation: "
+    android:layout_below="@id/spinner_department" 
+  />
+  <Spinner
+  	android:id="@+id/spinner_designation"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_designation"   
+    android:entries="@array/designation"
+  />  
+ 
+  <Button
+  	android:id="@+id/update"
+  	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_below="@id/spinner_designation"
+    android:text="OK"  
+  />
+  <Button
+  	android:id="@+id/cancel"
+  	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/update"
+    android:layout_below="@id/spinner_designation"
+    android:text="Cancel"  
+  />
+</RelativeLayout>

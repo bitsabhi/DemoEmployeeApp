@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:label="@string/app_label"
+    android:hint="@string/search_hint" 
+    android:searchSuggestAuthority="com.sample.provider.EmployeeProvider"
+    android:searchSuggestSelection="Type to search employees"
+    android:includeInGlobalSearch = "true"
+    android:searchSuggestThreshold="2"
+    android:searchSuggestIntentAction="employee.intent.action.SEARCH_SUGGESTION"
+   >
+</searchable>

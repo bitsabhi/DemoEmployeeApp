@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_label">Employees App</string>
+    <string name="search_hint">Search Employee</string>
+    
+	<string-array name="department">
+		<item>RnD</item>
+		<item>Procurement</item>
+		<item>HR</item>
+		<item>Android</item>
+		<item>iOS</item>
+		<item>WP7</item>
+	</string-array>
+	
+	<string-array name="designation">
+		<item>SE I</item>
+		<item>SE II</item>
+		<item>SE III</item>
+		<item>SE IV</item>
+	</string-array>
+</resources>
